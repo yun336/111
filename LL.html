@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简约版圣诞树</title>
+    <style>
+        /* 页面居中样式 */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #000; /* 黑色背景更有圣诞氛围 */
+            margin: 0;
+        }
+        /* 圣诞树整体容器 */
+        .christmas-tree {
+            position: relative;
+        }
+        /* 圣诞树树冠（三层三角形） */
+        .tree-top {
+            width: 0;
+            height: 0;
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            border-bottom: 120px solid #228B22; /* 深绿色 */
+            margin: 0 auto;
+        }
+        .tree-middle {
+            width: 0;
+            height: 0;
+            border-left: 130px solid transparent;
+            border-right: 130px solid transparent;
+            border-bottom: 150px solid #32CD32; /* 浅绿色 */
+            margin: -40px auto 0; /* 向上偏移叠层 */
+        }
+        .tree-bottom {
+            width: 0;
+            height: 0;
+            border-left: 160px solid transparent;
+            border-right: 160px solid transparent;
+            border-bottom: 180px solid #006400; /* 墨绿色 */
+            margin: -60px auto 0;
+        }
+        /* 圣诞树树干 */
+        .tree-trunk {
+            width: 60px;
+            height: 80px;
+            background-color: #8B4513; /* 棕色 */
+            margin: -20px auto 0;
+            border-radius: 10px;
+        }
+        /* 星星装饰 */
+        .star {
+            position: absolute;
+            top: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 40px;
+            color: #FFD700; /* 金黄色 */
+        }
+    </style>
+</head>
+<body>
+    <div class="christmas-tree">
+        <div class="star">★</div>
+        <div class="tree-top"></div>
+        <div class="tree-middle"></div>
+        <div class="tree-bottom"></div>
+        <div class="tree-trunk"></div>
+    </div>
+</body>
+</html>
